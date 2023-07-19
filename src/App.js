@@ -21,7 +21,9 @@ function App() {
           <Route path='gallery' element={<Gallery />} />
           <Route path='contact-us' element={<ContactUs />} />
           <Route path='shop' element={<Basket />} />
+
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
