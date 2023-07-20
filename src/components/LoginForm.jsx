@@ -29,7 +29,7 @@ const LoginForm = () => {
             if (response.ok) {
                 console.log("Accesso effettuato con successo");
                 alert("Accesso effettuato con successo");
-                navigate("/shop");
+                navigate("/homepage");
             } else {
                 throw new Error("Errore durante l'accesso");
             }
