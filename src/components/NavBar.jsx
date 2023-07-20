@@ -13,7 +13,7 @@ function NavBar() {
     <>
       <Navbar expand="lg" className="nav_bar p-0">
         <Container>
-          <Navbar.Brand className='imadi m-0' href="/">IMADI</Navbar.Brand>
+          <Navbar.Brand className='imadi m-0' href="homepage">IMADI</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
