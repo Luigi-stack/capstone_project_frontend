@@ -24,8 +24,6 @@ function NavBar() {
                 <Nav.Link className='text-light' href="#cart">My Cart <i class="bi bi-basket"></i>
                 </Nav.Link>
               )}
-              <Nav.Link className='text-light' href="registration">registration</Nav.Link>
-
             </Nav>
           </Navbar.Collapse>
         </Container>
