@@ -28,4 +28,4 @@ In addition to traditional baskets, IMADI also offer modern designs with innovat
 
 Feel free to explore the project and contribute to make it even more amazing! 😊🚀
 
-Thank you for joining us on this journey! 🙌
+Thank you for joining me on this journey! 🙌
