@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![IMADI](images/nome_immagine.png)
+![IMADI](../progetto_finale/src/assets/immagini/Screenshot%202023-07-21%20alle%2017.14.39.png)
 
 ## Project Description 📜
 
