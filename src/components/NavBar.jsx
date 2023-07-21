@@ -14,18 +14,18 @@ function NavBar() {
       <Navbar expand="lg" className="nav_bar p-0">
         <Container>
           <Navbar.Brand className='imadi m-0' href="homepage">IMADI</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link className='text-light' href="shop">Shop</Nav.Link>
-              <Nav.Link className='text-light' href="gallery">Gallery</Nav.Link>
-              <Nav.Link className='text-light' href="contact-us">Contact Us</Nav.Link>
-              {location.pathname === '/shop' && (
-                <Nav.Link className='text-light' href="#cart">My Cart <i class="bi bi-basket"></i>
-                </Nav.Link>
-              )}
-            </Nav>
-          </Navbar.Collapse>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link className='text-light' href="shop">Shop</Nav.Link>
+                <Nav.Link className='text-light' href="gallery">Gallery</Nav.Link>
+                <Nav.Link className='text-light' href="contact-us">Contact Us</Nav.Link>
+                {location.pathname === '/shop' && (
+                  <Nav.Link className='text-light' href="#cart">My Cart <i class="bi bi-basket"></i>
+                  </Nav.Link>
+                )}
+              </Nav>
+            </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
