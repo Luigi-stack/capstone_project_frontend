@@ -21,7 +21,7 @@ In addition to traditional baskets, IMADI also offer modern designs with innovat
 - React.js as the front-end library for dynamic rendering.
 - React Bootstrap: A UI framework that integrates Bootstrap styles and components into React applications, providing a responsive and visually appealing user interface.
 
-### Backend🔧
+### Backend 🔧
 
 - Java: The primary programming language used for the backend development.
 - Spring Boot: A powerful framework for building Java applications, providing easy configuration and rapid development.
