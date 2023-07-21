@@ -27,5 +27,3 @@ In addition to traditional baskets, IMADI also offer modern designs with innovat
 - SQL Database: The backend interacts with an SQL database (e.g., MySQL, PostgreSQL) to store and manage product and user information.
 
 Feel free to explore the project and contribute to make it even more amazing! 😊🚀
-
-Thank you for joining me on this journey! 🙌
