@@ -1,7 +1,5 @@
 # Welcome to the IMADI E-commerce Project! 🛍️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ![IMADI](./Screenshot%202023-07-21%20alle%2017.14.39.png)
 
 ## Project Description 📜
