@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import basket from "../assets/immagini/sen11b_1 copia.png"
 
 function AboutUs() {
     return (
