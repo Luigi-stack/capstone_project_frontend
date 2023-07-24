@@ -26,6 +26,6 @@ In addition to traditional baskets, IMADI also offer modern designs with innovat
 - Spring Security: Used to implement authentication and authorization features, including JSON Web Tokens (JWT) for secure user authentication.
 - SQL Database: The backend interacts with an SQL database (e.g., MySQL, PostgreSQL) to store and manage product and user information.
 
-[Link to Backend](https://github.com/Luigi-stack/capstone_project_backend)
+[👉 Link to Backend](https://github.com/Luigi-stack/capstone_project_backend)
 
 Feel free to explore the project and contribute to make it even more amazing! 😊🚀
