@@ -157,6 +157,10 @@ function PayPalPayment() {
 
     const handlePaymentComplete = () => {
         setPaymentCompleted(true);
+        // Dopo 3 secondi, reindirizza l'utente alla home page
+        setTimeout(() => {
+            window.location.href = "/";
+        }, 3000);
     };
 
     return (
@@ -177,7 +181,7 @@ function PayPalPayment() {
                                 onPaymentComplete={handlePaymentComplete}
                             />
                         ) : (
-                            <p>Pagamento completato! Verrai reindirizzato alla <Link to="/homepage">Home Page</Link>.</p>
+                            <p>Pagamento completato! Verrai reindirizzato alla <Link to="/homepage">Home Page</Link></p>
                         )}
                     </PayPalScriptProvider>
                 </Col>
