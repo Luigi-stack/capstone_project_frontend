@@ -8,25 +8,8 @@ import ContactUs from './components/Contact-us';
 import Footer from './components/Footer';
 import Basket from './components/Basket';
 import LoginRegister from './components/LoginRegister';
+import PayPalPayment from './components/PayPalPayment';
 
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <div className="App">
-//         <NavBar />
-//         <Routes>
-//           <Route path='homepage' element={<Homepage />} />
-//           <Route path='gallery' element={<Gallery />} />
-//           <Route path='contact-us' element={<ContactUs />} />
-//           <Route path='shop' element={<Basket />} />
-//           <Route path='/' element={<LoginRegister />} />
-//         </Routes>
-//         <Footer />
-//       </div>
-//     </BrowserRouter>
-//   );
-// }
 
 function App() {
   return (
@@ -34,8 +17,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<LoginRegister />} />
-          <Route path='homepage' 
-          element={
+          <Route path='homepage'
+            element={
               <>
                 <NavBar />
                 <Homepage />
@@ -70,6 +53,15 @@ function App() {
               </>
             }
           />
+
+          <Route path='payment'
+            element={
+              <>
+                <PayPalPayment />
+              </>
+            }
+          />
+
         </Routes>
       </div>
     </BrowserRouter>

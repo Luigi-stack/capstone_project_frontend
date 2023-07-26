@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 
 function Basket() {
@@ -102,10 +103,7 @@ function Basket() {
     }
   };
 
-  const handleCheckout = () => {
-    // Implement the logic for order checkout here
-    console.log("Proceed to checkout!");
-  };
+ 
 
   const toggleFavorite = (basket) => {
     if (favoriteItems.some((item) => item.id === basket.id)) {
@@ -211,13 +209,9 @@ function Basket() {
               </Container>
             ))}
             <p className="fs-4">Total Price: {totalPrice}€</p>
-            <Button
-              className="rounded-0"
-              variant="primary"
-              onClick={handleCheckout}
-            >
+            <Link to="/payment" className="btn btn-primary rounded-0">
               Proceed to Checkout
-            </Button>
+            </Link>
           </>
         )}
       </Row>
