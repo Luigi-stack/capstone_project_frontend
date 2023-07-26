@@ -104,6 +104,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const amount = "200";
 const currency = "USD";
 const style = { "layout": "vertical"};
+const redirectDelay = 3; // Tempo in secondi prima del reindirizzamento
 
 const ButtonWrapper = ({ currency, showSpinner, onPaymentComplete }) => {
     const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
@@ -154,13 +155,19 @@ const ButtonWrapper = ({ currency, showSpinner, onPaymentComplete }) => {
 
 function PayPalPayment() {
     const [paymentCompleted, setPaymentCompleted] = useState(false);
+    const [countdown, setCountdown] = useState(redirectDelay);
 
     const handlePaymentComplete = () => {
         setPaymentCompleted(true);
-        // Dopo 3 secondi, reindirizza l'utente alla home page
+        // Dopo redirectDelay secondi, reindirizza l'utente alla home page
+        const countdownInterval = setInterval(() => {
+            setCountdown(prevCountdown => prevCountdown - 1);
+        }, 1000);
+
         setTimeout(() => {
+            clearInterval(countdownInterval);
             window.location.href = "/";
-        }, 3000);
+        }, redirectDelay * 1000);
     };
 
     return (
@@ -181,7 +188,7 @@ function PayPalPayment() {
                                 onPaymentComplete={handlePaymentComplete}
                             />
                         ) : (
-                            <p>Pagamento completato! Verrai reindirizzato alla <Link to="/homepage">Home Page</Link></p>
+                            <p>Payment completed! You will be redirected to the <Link to="/homepage">Home Page</Link> in {countdown} second{countdown !== 1 ? "i" : ""}.</p>
                         )}
                     </PayPalScriptProvider>
                 </Col>
